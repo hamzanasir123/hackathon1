@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fefae0;
+}
+
+
+
+.container{
+position: relative;
+width: 100%;
+min-height: 1000px;
+max-width: 1000px;
+margin: 50px;
+background-color:#e0f2f1;
+display: grid;
+grid-template-columns: 1fr 2fr;
+Box-Shadow: 0 35px 55px rgba(0, 0, 0, 0.3)
+}
+
+
+.container .left-side{
+    position: relative;
+    background-color: #30323D ;
+    padding: 40px;
+    color: white;
+}
+
+
+.container .right-side{
+    position: relative;
+    background-color:#E8C547;
+    padding: 40px;
+    color: #30323D;
+}
+
+.profiletext {
+    position: relative;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0f2f1;
+}
+
+ .profiletext .img-box {
+    
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Ensures the container is as wide as possible */
+    margin-top: -10px; 
+} 
+
+ .profiletext .img-box img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fits the circle nicely */
+} 
+
+.profiletext  h2{
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-weight: 600;
+    line-height:  1.4em;;
+}
+
+.profiletext  h2 span{
+    font-size: 0.8em;
+    font-weight: 800;
+}
+
+.contact{
+  
+    padding-top: 40px;
+    
+}
+
+.title{
+   
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact ul{
+    position: relative;
+}
+
+.contact ul li {
+position: relative;
+ list-style: none;
+ cursor: pointer;
+}
+
+.contact ul li .icon {
+    display: inline-block;
+    width: 30px;
+  font-size: 18px;
+  color: #55c0f2;
+}
+
+.contact ul li a {
+
+    text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+
+.contact ul li .text{
+    font-weight: 300;
+}
+
+.contact.Education ul li  {
+    margin-bottom: 15px;
+}
+
+.contact.Education ul li h5{
+    font-weight: 600;
+    color: #55c0f2;
+  
+}
+
+.contact.Education ul li h4:nth-child(2){
+    font-weight:1000;
+}
+
+
+.contact.Education ul li h4{
+    font-weight:300;
+}
+
+
+
+.me {
+    color: #003d34; /* Dark teal for base color */
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; /* Green glowing effect */
+    transition: text-shadow 0.5s ease-in-out, color 0.5s ease-in-out; /* Smooth transition for shine effect */
+}
+
+
+.title2{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.skills h2{
+    margin-top:30px;
+}
+
+.skills {
+    position: relative;
+    width: 100%;
+    display: flex; /* Using flex for more control */
+    flex-direction: column;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 150px 2fr; /* Ensures text and bar are in a single row */
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.box h4{
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+
+.percentage{
+    margin-top: 15px;
+  position: relative;
+    width: 100%;
+    height: 10px;
+    background-color:white;
+   
+
+}
+
+.percentage div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color:#003d34 ;
+}
+
+.title3{
+    
+    margin-top: 35px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn{
+    margin-top: 20px;
+}
+.btn button{
+    background-color: #30323D;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+.btn button:hover{
+    background-color: #3f748d;
+}
+
+p{
+    margin-top: 5px;
+}
+
+@media(max-width:800px){
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}

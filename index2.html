@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <script src="/app.js" defer></script>
+    <h1 id="msg">Editable Resume Builder by Hamza Nasir</h1>
+    <form id="form">
+        <br>
+        <h1>Fill This Form To Create A Resume</h1>
+        <hr>
+        <h1>Personal Information</h1>
+    <label for="name" id="lable">Your Name:</label>
+    <input type="text" id="firstName" name="name" placeholder="Enter your Name..." required >
+    <br>
+    <label for="designation" id="lable">Designation:</label>
+    <input type="text" id="userDesignation" name="designation" placeholder="Full Stack Devoloper..." required>
+    <br>
+    <label for="aboutme" id="lable">About Me:</label>
+    <textarea id="useraboutme" name="aboutme" rows="4" cols="30" placeholder="Write About You..." required></textarea>
+    <br>
+    <label for="mobileno" id="lable">Mobile No:</label>
+    <input type="number" id="usermobileno" name="mobileno" placeholder="Write Your Mobile Number..." required>
+    <br>
+    <label for="email" id="lable">Email:</label>
+    <br>
+    <input type="email" id="useremail" name="email" placeholder="Write Your Email..." required>
+    <br>
+    <br>
+    <h1>Education</h1>
+    <label for="matric" id="lable">Matric:</label>
+    <br>
+<input type="text" id="usermatric" name="matric" placeholder="Write Your School Name..." required>
+<br>
+<label for="intermadiate" id="lable">Intermadiate:</label>
+<input type="text" id="userintermadiate" name="intermadiate" placeholder="Write Your Collage Name..." required>
+<br>
+<h1>Experience</h1>
+<textarea id="userexperience"  rows="3" cols="30" placeholder="Write Your Experience" required></textarea>
+<br>
+    <h1>Skills</h1>
+    <br>
+    <label>
+        <input type="checkbox" id="skills1" value="html"> HTML
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" id="skills2" value="css"> CSS
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" id="skills3" value="javascript"> JavaScript
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" id="skills4" value="typescript"> TypeScript
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" id="skills5" value="python"> Reactjs
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" id="skills6" value="java"> Nextjs
+    </label>
+    <br>
+    <br>
+<br>
+<br>
+<label for="imageUpload">Upload Image:</label>
+<input type="file" id="userimg" name="image" accept="image/*" required>
+<br>
+<button id="generate" type="submit">Generate</button>
+<br>
+<br>
+<br>
+    </form>
+    <div id="hide">
+    <div class="container">
+        <div class="left-side">
+            <div class="profiletext">
+                <div class="img-box">
+                    <img src=""  id="img" alt="Profile Picture">
+                </div>
+                <h2 id="fName"></h2><br>
+                <b><span id="designation"></span></b>
+            </div>
+            <div class="contact">
+                <h3 class="title">Contact Info</h3>
+                <ul>
+                    <li>
+                        <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                        <span id="mobileno" class="editable" contenteditable="false"></span>
+                        <br>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                        <span  id="email" class="editable" contenteditable="false"></span>
+                        <br>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
+                        <span class="text"><a href="https://www.linkedin.com/in/hamza-nasir-bb02142b5/">Linkedin</a></span>
+                        <br>
+                    </li>
+                    <li>
+                        <span class="icon"><i class="fa fa-github-square" aria-hidden="true"></i></span>
+                        <span class="text"><a href="https://github.com/hamzanasir123">GitHub</a></span>
+                        <br>
+                    </li>
+                    <li>
+                        <span class="icon"> <i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span class="text"> Karachi, Pakistan</span>
+                        <br>
+                    </li>
+                </ul>
+            </div>
+            
+<!-- Education -->
+
+        <div class="contact Education">
+            <h3 class="title">Education</h3>
+            <ul>
+                <li>
+                    <h4>Matriculation</h4>
+                    <h4>School Name :<h4 id="matric" class="editable" contenteditable="false"></h4></h4>
+                </li>
+                <li>
+                    <h4>Intermediate</h4>
+                    <h4>College Name : <h4  id="intermadiate" class="editable" contenteditable="false" ></h4></h4>
+                </li>
+                <li>
+                    <h5>2022 - 2023</h5>
+                    <h4>Gen AI, Web3.0, Metaverse </h4>
+                    <h4>Instituion name : Governer House</h4>
+                </li>
+            </ul>
+        </div>
+    </div>
+     
+
+
+        <div class="right-side">
+           <div class="aboutme">
+            <h2 class="title2">About <span >Me</span></h2>
+            <p id="aboutme" class="editable" contenteditable="false"></p>
+            <h1>EXPERIENCE</h1>
+    <hr>
+    <p id="experience" class="editable" contenteditable="false"></p>
+           </div>
+
+
+           <!-- skills -->
+
+           <div class="skills">
+            <h2 class="title2">Professional <span>Skills</span></h2>
+            <div class="box">
+              <h4 id="skillsDisplay" ></h4>
+            </div>
+                    </div>
+                    <div class="resume">
+                        <h2 class="title3">Edit And Save <span>resume</span></h2>
+                        <p>Click the button below to Edit And Save your resume</p>
+                    <div class="btn">
+                     <button id="editResume">Edit</button>
+                     <button id="saveResume">Save</button><br/>
+                     <button id="generateLink" >Generate Link</button>
+                     <!-- <button id="downloadResume">Download PDF</button> -->
+                        </div>
+                    </div>
+                    <div id="shareLink" class="hidden">
+                        <p>Share this link:</p>
+                        <a id="resumeLink" href="#" target="_blank"></a>
+                    </div>
+                  </div>
+              </div>   
+            </div>
+            <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script> -->
+</body>
+</html>
