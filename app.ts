@@ -154,19 +154,7 @@ generateLinkButton.addEventListener("click", function () {
     });
 });
 
-// downloadButton.addEventListener("click", function () {
-//     const resumeElement = resume; // The element containing the resume
-
-//     // Options for PDF generation
-//     const options = {
-//         margin: 1,
-//         filename: `Resume_${myName.textContent}.pdf`, // Use the name in the resume for filename
-//         image: { type: 'jpeg', quality: 0.98 },
-//         html2canvas: { scale: 2 },
-//         jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
-//     };
-
-//     // Generate and save PDF
-//     // html2pdf().set(options).from(resumeElement).save();
-// });
+downloadButton.addEventListener("click", function () {
+    window.print();
+});
 
